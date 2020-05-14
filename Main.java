@@ -7,6 +7,7 @@ public class Main {
             String entryStr = entry.nextLine();
             if (entryStr.equals("exit")) return;
             int result = InputProcessing.calc(entryStr);
+            if (result == -101) InputProcessing.myExeption();
             System.out.println(result);
 
         }
